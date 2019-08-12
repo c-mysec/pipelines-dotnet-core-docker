@@ -24,7 +24,7 @@ stages:
       displayName: Login to ACR
       inputs:
         command: login
-        containerRegistry: ChemECommerceContainerRegistry
+        containerRegistry: chemecommercecontainerregistry.azurecr.io
     - task: Docker@2
       displayName: Build an image
       inputs:
