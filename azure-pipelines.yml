@@ -24,12 +24,12 @@ stages:
       displayName: Login to ACR
       inputs:
         command: login
-        containerRegistry: chemecommercecontainerregistry.azurecr.io
+        containerRegistry: microservicesdemotest
     - task: Docker@2
       displayName: Build an image
       inputs:
         command: buildAndPush
-        repository: clovisyharada/pipelines
+        repository: clovisyutakaharada/microservicesdemo-pipelines
         dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
